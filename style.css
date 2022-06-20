@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color: lightgrey;
+}
+
+.app {
+  border: 5px solid rgb(85, 160, 0);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  font-weight: bold;
+  background-color: white;
+  user-select: none;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.sound-button {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px gray;
+  padding: 30px;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgb(185, 220, 231);
+  font-weight: bold;
+}
+
+.sound-button:active {
+  transform: scale(0.95);
+  background-color: rgb(132, 195, 214);
+}
+
+.sound-button.power-off:active {
+  transform: scale(0.95);
+  background-color: rgb(185, 220, 231);
+}
+
+.control-panel {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.control-panel {
+  font-size: 1.5rem;
+}
+
+.switch {
+  transform: scale(1.5);
+}
+
+.switch label {
+  color: black;
+}
+
+.switch label input[type="checkbox"]:checked + .lever {
+  background-color: green;
+}
+
+.switch label input[type="checkbox"]:checked + .lever:after {
+  background-color: rgb(0, 151, 0);
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 80px;
+  padding: 20px;
+  background-color: lightgreen;
+}
+
+@keyframes fadeMessage {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+input[type="range"] {
+  width: 200px;
+  -webkit-appearance: none;
+  background-color: #9a905d;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: rgb(0, 151, 0);
+}
+
+input[type="range"]:disabled::-webkit-slider-thumb {
+  background-color: gray;
+}
