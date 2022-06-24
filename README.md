@@ -38,6 +38,7 @@ Technologies used during development process:
 
 - React (CDN)
 - Babel (jsx transpiler)
+- MaterializeCSS 1.0.0 (switches, slider)
 - CSS
 - HTML
 
