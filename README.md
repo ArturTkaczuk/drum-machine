@@ -17,7 +17,6 @@ Drum machine in React to learn coding, [live here](https://drum-machine-at.netli
 
 - Latest web browser to run app on website ([Google Chrome](https://www.google.com/intl/en_en/chrome/))
 - To run git commands you need [Git](https://git-scm.com/downloads) installed
-- To run npm commands you need [node](https://nodejs.org/en/download/) installed
 
 ## Installation
 
